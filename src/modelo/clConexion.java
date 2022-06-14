@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * @author Fiore
  */
 public class clConexion{
-    private final String base = "dbAgencia";
+    private final String base = "mysql_examenfiore";
     private final String user = "root";
     private final String password ="lauramaria1977";
     private final String url = "jdbc:mysql://localhost:3307/" + base;
