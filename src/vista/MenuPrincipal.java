@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Fiore
+ * @author Fioreg
  */
 public class MenuPrincipal extends javax.swing.JFrame {
  
@@ -37,17 +37,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         JPanel.setBackground(new java.awt.Color(0, 255, 102));
         JPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 0, 255)));
         JPanel.setForeground(new java.awt.Color(255, 51, 51));
-
-        javax.swing.GroupLayout JPanelLayout = new javax.swing.GroupLayout(JPanel);
-        JPanel.setLayout(JPanelLayout);
-        JPanelLayout.setHorizontalGroup(
-            JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1008, Short.MAX_VALUE)
-        );
-        JPanelLayout.setVerticalGroup(
-            JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 652, Short.MAX_VALUE)
-        );
+        JPanel.setLayout(new javax.swing.BoxLayout(JPanel, javax.swing.BoxLayout.LINE_AXIS));
 
         mnuMantenimiento.setMnemonic('N');
         mnuMantenimiento.setText("Mantenimiento");
@@ -107,11 +97,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JPanel)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 1178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(JPanel)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(JPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 588, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
