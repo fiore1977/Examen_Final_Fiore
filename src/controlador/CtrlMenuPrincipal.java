@@ -57,7 +57,7 @@ public class CtrlMenuPrincipal implements ActionListener{
             ConsultaUsuarios ConsUsuarios = new ConsultaUsuarios();
             clUsuario usuario = new clUsuario();
             CtrlGestUsuario gestUsuario = new CtrlGestUsuario(GestUs, usuario, ConsUsuarios);
-            MenuPrincipal.jdpPrincipal.add(GestUs);
+            MenuPrincipal.JPanel.add(GestUs);
             GestUs.setVisible(true);
         }else if(e.getSource()== MenuPrincipal.mnuitmCliente){
             frmCliente GesClie = new frmCliente();
@@ -71,7 +71,7 @@ public class CtrlMenuPrincipal implements ActionListener{
             } catch (SQLException ex) {
                 Logger.getLogger(CtrlMenuPrincipal.class.getName()).log(Level.SEVERE, null, ex);
             }
-            MenuPrincipal.jdpPrincipal.add(GesClie);
+            MenuPrincipal.JPanel.add(GesClie);
             GesClie.setVisible(true);
         }else if(e.getSource()== MenuPrincipal.mnuitmContinente){
             frmContinente GesCont = new frmContinente();
@@ -80,7 +80,7 @@ public class CtrlMenuPrincipal implements ActionListener{
             
             
             CtrlclContinente contC = new CtrlclContinente(Cont, ConCont, GesCont);
-            MenuPrincipal.jdpPrincipal.add(GesCont);
+            MenuPrincipal.JPanel.add(GesCont);
             GesCont.setVisible(true);
         }else if(e.getSource()== MenuPrincipal.mnuitmPais){
             frmPais GesPais = new frmPais();
@@ -89,7 +89,7 @@ public class CtrlMenuPrincipal implements ActionListener{
             
             
             CtrlclPais contC = new CtrlclPais(pais, Clpais, GesPais);
-            MenuPrincipal.jdpPrincipal.add(GesPais);
+            MenuPrincipal.JPanel.add(GesPais);
             GesPais.setVisible(true);
         }
         else if(e.getSource()== MenuPrincipal.mnuitmCiudad){
@@ -99,7 +99,7 @@ public class CtrlMenuPrincipal implements ActionListener{
             
             
             CtrlclCiudad contC = new CtrlclCiudad(ciu, ClCiudad, GesCiudad);
-            MenuPrincipal.jdpPrincipal.add(GesCiudad);
+            MenuPrincipal.JPanel.add(GesCiudad);
             GesCiudad.setVisible(true);
     }
   }  

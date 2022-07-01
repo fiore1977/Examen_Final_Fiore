@@ -1,22 +1,23 @@
 
 package vista;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import static java.lang.reflect.Array.set;
+import javax.swing.ImageIcon;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Fiore
  */
 public class MenuPrincipal extends javax.swing.JFrame {
-  
-    
-    public MenuPrincipal() {
-        initComponents();
-    }
-
+ 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jdpPrincipal = new javax.swing.JDesktopPane();
+        JPanel = new javax.swing.JDesktopPane();
         mnuPrincipal = new javax.swing.JMenuBar();
         mnuMantenimiento = new javax.swing.JMenu();
         mnuitmCliente = new javax.swing.JMenuItem();
@@ -33,18 +34,18 @@ public class MenuPrincipal extends javax.swing.JFrame {
         setTitle("Menú Principal");
         setIconImage(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icn_agencia.png")).getImage());
 
-        jdpPrincipal.setBackground(new java.awt.Color(0, 255, 102));
-        jdpPrincipal.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 0, 255)));
-        jdpPrincipal.setForeground(new java.awt.Color(255, 51, 51));
+        JPanel.setBackground(new java.awt.Color(0, 255, 102));
+        JPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(51, 0, 255)));
+        JPanel.setForeground(new java.awt.Color(255, 51, 51));
 
-        javax.swing.GroupLayout jdpPrincipalLayout = new javax.swing.GroupLayout(jdpPrincipal);
-        jdpPrincipal.setLayout(jdpPrincipalLayout);
-        jdpPrincipalLayout.setHorizontalGroup(
-            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout JPanelLayout = new javax.swing.GroupLayout(JPanel);
+        JPanel.setLayout(JPanelLayout);
+        JPanelLayout.setHorizontalGroup(
+            JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1008, Short.MAX_VALUE)
         );
-        jdpPrincipalLayout.setVerticalGroup(
-            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        JPanelLayout.setVerticalGroup(
+            JPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 652, Short.MAX_VALUE)
         );
 
@@ -106,11 +107,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jdpPrincipal)
+            .addComponent(JPanel)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jdpPrincipal)
+            .addComponent(JPanel)
         );
 
         pack();
@@ -160,7 +161,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JDesktopPane jdpPrincipal;
+    public javax.swing.JDesktopPane JPanel;
     public javax.swing.JMenuItem jmiUsuario;
     private javax.swing.JMenu mnuAdministrar;
     private javax.swing.JMenu mnuMantenimiento;
@@ -173,4 +174,5 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuitmSalir;
     private javax.swing.JPopupMenu.Separator sprSeparador1;
     // End of variables declaration//GEN-END:variables
+
 }
